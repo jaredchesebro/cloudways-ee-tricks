@@ -1,6 +1,7 @@
 # How To Get ExpressionEngine running on Cloudways
 
 1. Disable Varnish cache.
+   - I could be wrong but I think some work would need to be done for this to place nice with forms and other dynamic content.
 2. [Enable necessary PHP extensions](https://support.cloudways.com/en/articles/7891624-how-to-enable-php-functions):
    - escapeshellcmd (REQUIRED)
    - tmpfile (SOME ADDONS MIGHT NEED THIS)
