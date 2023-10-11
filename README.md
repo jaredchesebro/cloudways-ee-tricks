@@ -8,6 +8,6 @@
 3. Make sure you have [set correct file permissions](https://docs.expressionengine.com/latest/installation/installation.html#3-set-file-permissions).
    - `find system/ee \( -type d -exec chmod 755 {} \; \) -o \( -type f -exec chmod 644 {} \; \)`
 4. Use memcached instead of file cache.
-5. Move system/ to private_html/ (you can't place files in project root directory).
-   - Set system path in index.php and admin.php to: '../private_html/system'
+5. Move `system/` to `private_html/` (you can't place files in project root directory).
+   - Set system path in `index.php` and `admin.php` to: `../private_html/system`
 6. Check your file permissions again.
