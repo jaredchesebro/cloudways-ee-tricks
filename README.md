@@ -7,8 +7,10 @@
 3. [Enable necessary PHP extensions](https://support.cloudways.com/en/articles/7891624-how-to-enable-php-functions):
    - escapeshellcmd (REQUIRED)
    - tmpfile (SOME ADDONS MIGHT NEED THIS)
-4. Make sure you have [set correct file permissions](https://docs.expressionengine.com/latest/installation/installation.html#3-set-file-permissions). Cloudways seems a bit more strict vs other hosts.
-   - `find system/ee \( -type d -exec chmod 755 {} \; \) -o \( -type f -exec chmod 644 {} \; \)`
+4. Make sure you have set correct file permissions. Cloudways seems a bit more strict vs other hosts.
+   - [Restore file/folder permissions to correct owner](https://support.cloudways.com/en/articles/5126387-how-can-i-reset-file-and-folder-permissions)
+   - [Correct permissions for ExpressionEngine](https://docs.expressionengine.com/latest/installation/installation.html#3-set-file-permissions)
+      - `find system/ee \( -type d -exec chmod 755 {} \; \) -o \( -type f -exec chmod 644 {} \; \)`
 5. [Add .htaccess file.](https://docs.expressionengine.com/v6/installation/best-practices.html#1-create-an-htaccess-file)
 6. Move `system/` to `private_html/` (you can't place files in project root directory).
    - Set system path in `index.php` and `admin.php` to: `../private_html/system`
